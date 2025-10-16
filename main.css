@@ -1,0 +1,70 @@
+:root {
+  --primary-color: #dbcf5c;
+  --bg-section: #faf6e9;
+}
+
+html {
+  font-size: 1.5rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  background-color: white;
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+/* SECCIONES */
+section {
+  padding: 3rem 2rem;
+  background-color: var(--bg-section);
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* EFECTO PARALLAX */
+.parallax {
+  background-image: url("/olive-oil_1920.webp");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+  html {
+    font-size: 1rem;
+  }
+
+  .parallax {
+    background-attachment: scroll; /* Mejora en móviles */
+  }
+
+  section {
+    padding: 2rem 1.2rem;
+  }
+}
